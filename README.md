@@ -15,7 +15,7 @@ device = ds2490.DS2490Master()
 
 while True:
 	result = device.OneDeviceSearch()
-	if result != None:
+	if result:
 		print(hex(result))
 		break
 
