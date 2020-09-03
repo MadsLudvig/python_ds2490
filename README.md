@@ -20,3 +20,7 @@ while True:
 		break
 
 ```
+### Dependencies
+* pyusb
+* libusb
+
