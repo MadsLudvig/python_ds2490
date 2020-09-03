@@ -395,7 +395,7 @@ class DS2490Master(GenericOneWireMaster.GenericOneWireMaster):
 
     raw = self.TryRecvData(8)
 
-    if raw != None:
+    if raw:
 
       ret += list(raw)
 
@@ -411,8 +411,8 @@ def mkserial(num):
 
 if __name__ == '__main__':
   dev = DS2490Master()
-  result = None
-  while result == None:
+  while True:
     result = dev.OneDeviceSearch(dev.SEARCH_NORMAL)
-    if result != None:
+    if result:
       print(hex(result))
+      break
