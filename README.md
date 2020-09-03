@@ -9,7 +9,7 @@ Module for reading ibutton devices through the DS2490 chipset via usb. Uses pyus
 ### Example usage
 
 ```python
-import ds2490
+from python_ds2490.master import ds2490
 
 device = ds2490.DS2490Master()
 
